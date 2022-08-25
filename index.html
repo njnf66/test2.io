@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-touch-fullscreen" content="yes" />
@@ -20,18 +20,18 @@
 
   <script type="text/javascript">
     function kaishi() {
-      var docElm = document.documentElement;
+      var elem = document.documentElement;
       //W3C   
-      if (docElm.requestFullscreen) {
-        docElm.requestFullscreen();
+      if (elem.requestFullscreen) {
+        elem.requestFullscreen();
       }
       //FireFox   
-      else if (docElm.mozRequestFullScreen) {
-        docElm.mozRequestFullScreen();
+      else if (elem.mozRequestFullScreen) {
+        elem.mozRequestFullScreen();
       }
       //Chrome等   
-      else if (docElm.webkitRequestFullScreen) {
-        docElm.webkitRequestFullScreen();
+      else if (elem.webkitRequestFullScreen) {
+        elem.webkitRequestFullScreen();
       }
       //IE11   
       else if (elem.msRequestFullscreen) {
